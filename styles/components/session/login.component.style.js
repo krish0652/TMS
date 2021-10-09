@@ -1,15 +1,29 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import { appColors } from "../../common/appColors.styles";
 
 export const loginStyles = StyleSheet.create({
+    container: {
+    }, 
     header: {
         fontWeight: 'bold',
-        paddingVertical: 20,
+        paddingTop: 20,
+        paddingBottom: 50,
         fontSize: 20,
         textAlign: 'center'
     },
     mobileNumberContainer: {
-        paddingHorizontal: 20
+        paddingHorizontal: 20,
+        backgroundColor: appColors.white,
+        position: 'absolute',
+        top: 200,
+        width: '90%',
+        padding: 20,
+        borderRadius: 10,
+        border: 1,
+        borderColor: appColors.lightGray,
+        marginHorizontal: 20,
+        zIndex: 1,
+        elevation: 7
     },
     label: {
         fontWeight: 'bold',
@@ -23,6 +37,13 @@ export const loginStyles = StyleSheet.create({
         fontWeight: 'bold'
     },
     button: {
-        marginVertical: 20
+        marginVertical: 20,
+        borderRadius: 10,
+        padding: 5,
+        backgroundColor: appColors.primary
+    },
+    disclaimar: {
+        paddingVertical: 20,
+        fontSize: 10
     }
 })

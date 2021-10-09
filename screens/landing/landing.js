@@ -14,20 +14,13 @@ class LandingScreen extends Component {
     }
 
     render() {
-        const banner = { uri: "./assets/home-interior.png" };
         return(
-            <View style={[commonStyles.container, landingStyles.container]}>
-                <View style={landingStyles.advContainer}>
-                    <Text>1.</Text>
-                    <Text>1.</Text>
-                    <Text>1.</Text>
-                    <Text>1.</Text>
-                    <Text>1.</Text>
-                    
-                </View>
-                <View style={landingStyles.loginContainer}>
+            <View style={landingStyles.container}>
+                <ImageBackground source={require( "../../assets/home-interior.jpeg")} resizeMode="cover" style={landingStyles.image} imageStyle= 
+{landingStyles.imageStyle}>
+                    <Text style={landingStyles.header}>My Tenant</Text>
                     <LoginComponent/>
-                </View>
+                </ImageBackground>
             </View>
         )
     }

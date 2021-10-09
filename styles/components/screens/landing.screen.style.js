@@ -5,27 +5,28 @@ const screenHeight = Dimensions.get('window').height;
 const screenWidth = Dimensions.get('window').width;
 
 export const landingStyles = StyleSheet.create({    
-    container: {    
-        flex: 1
+    container: {        
+        border: 1,
+        borderColor: appColors.lightgray,
+        backgroundColor: appColors.primary,
+        height: Dimensions.get('screen').height
     },
-    loginContainer: {
-        width: 300,
-        alignSelf: 'flex-end',
+    header: {
+        fontSize: 30,
         position: 'absolute',
-        top: 10,
-        marginRight: 100,
-        marginTop: 40,
-        height: 230,
-        borderColor: appColors.lightGray,
-        borderRadius: 5,
-        opacity: 0.9,
-        backgroundColor: '#F8F8F8',
+        top: 50,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        width: Dimensions.get('screen').width,
+        color: appColors.white
     },
-    advContainer: {
-        alignSelf: 'flex-start',
-        position: "absolute",
-        top: 200,
-        left: 200
+    image: {
+        height: 300,
+        width: Dimensions.get('screen').width,
+        aspectRatio: 1
+    },
+    imageStyle:{
+        opacity: 0.5
     }
     
 })
